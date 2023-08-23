@@ -1,0 +1,132 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('./Images/Body\ background.jpg');
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    z-index: 1000;
+  }
+  
+  .navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 54px;
+  }
+  
+  .hero {
+    background-image: url('./Images/Background.jpeg');
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    text-align: center;
+    padding: 200px 0;
+  }
+  
+  .hero h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+  }
+  
+  .hero p {
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .content {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.9); /*Add a background with opacity */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    
+  }
+  
+  .about {
+    padding: 100px 0;
+    background-image: url('./Images/Body\ background.jpg');
+  }
+
+/* Flexbox styling for equipment section */
+.equipments {
+    padding: 100px 0;
+    background-color: #f4f4f4;
+    background-image: url('./Images/Body\ background.jpg');
+  }
+  
+  .equipment-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between; /* Distribute items with space between */
+  }
+  
+  .equipment {
+    flex: 0 0 calc(33.33% - 20px);
+    text-align: center;
+    margin: 20px 20%;
+    padding: 20px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  
+  .equipment:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .equipment img {
+    width: 100%; 
+    height: auto; 
+    max-width: 100px; 
+    border-radius: 10px; 
+  }
+  
+  .equipment h3 {
+    font-size: 24px;
+    margin: 10px 0;
+  }
+  
+  .equipments h2 {
+    font-size: 44px;
+    margin: 10px 0;
+    color: #f4f4f4;
+    text-align: center;
+}
+
+  /* Ensure at least three equipments in each row */
+  @media screen and (max-width: 1000px) {
+    .equipment {
+      flex-basis: calc(50% - 20px);
+    }
+  }
+  
+  @media screen and (max-width: 700px) {
+    .equipment {
+      flex-basis: calc(100% - 20px);
+    }
+  }
+  
+  
+  .contact {
+    padding: 100px 0;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-image: url('./Images/Body\ background.jpg');
+  }
+
+  .contact img{
+    width: 10%;
+  }
+  
